@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="Sqlite (Xerial) - example.db" uuid="b8a86b4c-0456-4746-b960-f8289f17a12b">
+    <database-info product="SQLite" version="3.8.9" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native"/>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed"/>
+    <schema name="" catalog=""/>
+  </data-source>
+  <data-source name="Sqlite (Xerial) - example.db [2]" uuid="add0320d-47c4-4be3-adb3-eb7d42384616">
+    <database-info product="SQLite" version="3.8.9" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native"/>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed"/>
+    <schema name="" catalog=""/>
+    <table name="WEB_URL" schema="" catalog="" type="TABLE">
+      <column name="id" sqlType="INTEGER" precision="0" scale="-1" nullable="true" jdbcType="4"/>
+      <column name="url" sqlType="STRING" precision="0" scale="-1" nullable="false" jdbcType="12"/>
+      <column name="short" sqlType="STRING" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="hits" sqlType="INT" precision="0" scale="-1" nullable="true" jdbcType="4"/>
+      <column name="t" sqlType="TIMESTAMP" precision="0" scale="-1" nullable="true" jdbcType="12" def="J0NVUlJFTlRfVElNRVNUQU1QJw=="/>
+      <column name="title" sqlType="STRING" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <primary-key columns="id"/>
+    </table>
+    <table name="sqlite_sequence" schema="" catalog="" type="TABLE">
+      <column name="name" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="seq" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+    </table>
+  </data-source>
+  <data-source name="Sqlite (Xerial) - example.db [3]" uuid="7e8c9c4d-4732-492f-a017-944f2b2daf61">
+    <database-info product="SQLite" version="3.8.9" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native"/>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed"/>
+    <schema name="" catalog=""/>
+    <table name="WEB_URL" schema="" catalog="" type="TABLE">
+      <column name="id" sqlType="INTEGER" precision="0" scale="-1" nullable="true" jdbcType="4"/>
+      <column name="url" sqlType="STRING" precision="0" scale="-1" nullable="false" jdbcType="12"/>
+      <column name="short" sqlType="STRING" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="hits" sqlType="INT" precision="0" scale="-1" nullable="true" jdbcType="4"/>
+      <column name="t" sqlType="TIMESTAMP" precision="0" scale="-1" nullable="true" jdbcType="12" def="J0NVUlJFTlRfVElNRVNUQU1QJw=="/>
+      <column name="title" sqlType="STRING" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <primary-key columns="id"/>
+    </table>
+    <table name="sqlite_sequence" schema="" catalog="" type="TABLE">
+      <column name="name" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="seq" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+    </table>
+  </data-source>
+</component>

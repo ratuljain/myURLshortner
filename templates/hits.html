@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+
+
+    <link rel="stylesheet" href="static/style.css">
+
+
+</head>
+
+
+
+<body class="align">
+
+    <div class="site__container" align="center">
+        <div class="row" align="center">
+
+            <a href="/">Home</a>
+            <br>
+            <br>
+            <div class="col-lg-6 col-lg-offset-3">
+            </div>
+        </div>
+
+
+        <div class="grid__container">
+
+            <form action="" method="post" class="form form--login">
+
+                <div class="form__field">
+                    <input type="text" id="search" name="search" class="form__input" placeholder="Enter the Shortened url" /> {#
+                    <input id="url" type="text" class="form__input" placeholder="Enter the URL" required>#}
+                </div>
+
+                <div class="form__field">
+                    <input type="submit" value="Search">
+                </div>
+            </form>
+
+
+            <br>
+
+            <br>
+            <br> {#
+            <h3>Search Results:</h3>#} {% if url is defined %} This site has been visited {{ url }} times {% endif %} {% if error %}
+            <p class="error"><strong></strong> {{ error }}</p>
+            {% endif %} {% for message in get_flashed_messages() %} {{ message }} {% endfor %}
+
+        </div>
+
+
+    </div>
+
+
+</body>
+
+
+</html>

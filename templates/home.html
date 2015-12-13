@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+
+
+    <link rel="stylesheet" href="static/style.css">
+
+
+</head>
+
+
+<body class="align">
+
+    <div class="site__container">
+        <div class="row" align="center">
+
+            <a href="/search">Search</a> &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="/hits">Hits</a>
+
+            <br>
+            <br>
+            <div class="col-lg-6 col-lg-offset-3">
+            </div>
+        </div>
+
+        <div class="grid__container">
+
+
+            {% if not short_url %}
+
+            <form action="" method="post" class="form form--login">
+
+                <div class="form__field">
+                    <input type="text" id="url" name="url" class="form__input" placeholder="Enter the URL" /> {#
+                    <input id="url" type="text" class="form__input" placeholder="Enter the URL" required>#}
+                </div>
+
+                <div class="form__field">
+                    <input type="submit" value="Shorten it!!">
+                </div>
+            </form>
+
+            {% else %}
+            <div>
+                Here's your shortened URL: <a target="_blank" href="{{ short_url }}"> {{ short_url }}</a>
+            </div>
+            {% endif %}
+            <br>
+            <br> {% if error %}
+            <p class="error"><strong></strong> {{ error }}</p>
+            {% endif %}
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
